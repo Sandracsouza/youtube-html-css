@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mudando o tamanho do fundo</title>
+    <title>Fundo fixo de tela</title>
 
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url("imagens/wallpaper002.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: black url("imagens/wallpaper002.jpg")
+            center center no-repeat fixed;
+            
+            /* 
+            shorthand - background na seguinte ordem:
+            color image position repeat (size) attachment.
+            obs: embora o background-size ja conste na documentação 
+            que funciona no shorthand, no momento AINDA não funcionou
+            */
+
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -34,8 +40,14 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus dolores consectetur sed repudiandae quia obcaecati saepe, accusamus omnis consequatur labore nesciunt vel impedit. Dicta vero odit ad voluptatem ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis mollitia possimus ullam dignissimos iusto. Amet aliquid quia sed illum, at modi hic obcaecati libero praesentium quidem esse dicta voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur hic molestias quaerat fugiat, nesciunt, suscipit provident error libero culpa quas, eaque recusandae nam. Eaque laudantium corporis vel optio maxime dolorum.
-
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus dolores consectetur sed repudiandae quia obcaecati saepe, accusamus omnis consequatur labore nesciunt vel impedit. Dicta vero odit ad voluptatem ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis mollitia possimus ullam dignissimos iusto. Amet aliquid quia sed illum, at modi hic obcaecati libero praesentium quidem esse dicta voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur hic molestias quaerat fugiat, nesciunt, suscipit provident error libero culpa quas, eaque recusandae nam. Eaque laudantium corporis vel optio maxime dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus dolores consectetur sed repudiandae quia obcaecati saepe, accusamus omnis consequatur labore nesciunt vel impedit. Dicta vero odit ad voluptatem ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis mollitia possimus ullam dignissimos iusto. Amet aliquid quia sed illum, at modi hic obcaecati libero praesentium quidem esse dicta voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur hic molestias quaerat fugiat, nesciunt, suscipit provident error libero culpa quas, eaque recusandae nam. Eaque laudantium corporis vel optio maxime dolorum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse maiores, quo corrupti asperiores delectus sit voluptatum ut sed nobis eos fugit dolores ipsa at vitae vel, necessitatibus reprehenderit et vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatibus et. Nesciunt optio repellendus molestias magni doloremque culpa, minima quidem reiciendis quaerat natus incidunt officia, corporis odit quas. Ratione, aliquid.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus dolores consectetur sed repudiandae quia obcaecati saepe, accusamus omnis consequatur labore nesciunt vel impedit. Dicta vero odit ad voluptatem ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis mollitia possimus ullam dignissimos iusto. Amet aliquid quia sed illum, at modi hic obcaecati libero praesentium quidem esse dicta voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur hic molestias quaerat fugiat, nesciunt, suscipit provident error libero culpa quas, eaque recusandae nam. Eaque laudantium corporis vel optio maxime dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus dolores consectetur sed repudiandae quia obcaecati saepe, accusamus omnis consequatur labore nesciunt vel impedit. Dicta vero odit ad voluptatem ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis mollitia possimus ullam dignissimos iusto. Amet aliquid quia sed illum, at modi hic obcaecati libero praesentium quidem esse dicta voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur hic molestias quaerat fugiat, nesciunt, suscipit provident error libero culpa quas, eaque recusandae nam. Eaque laudantium corporis vel optio maxime dolorum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse maiores, quo corrupti asperiores delectus sit voluptatum ut sed nobis eos fugit dolores ipsa at vitae vel, necessitatibus reprehenderit et vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatibus et. Nesciunt optio repellendus molestias magni doloremque culpa, minima quidem reiciendis quaerat natus incidunt officia, corporis odit quas. Ratione, aliquid.
+        
         </p>
 
     </main>
